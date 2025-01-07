@@ -5,7 +5,6 @@ KeyRephrase is a Windows application designed to help you rephrase text using a 
 ## Features
 - Rephrase text using a shortcut key (**Shift + Alt + X**).
 - Supports multiple Large Language Model (LLM) providers.
-- Easy configuration through a `credentials.yml` file.
 
 ## Supported LLM Providers
 - OpenAI
@@ -14,19 +13,10 @@ KeyRephrase is a Windows application designed to help you rephrase text using a 
 - Cerebras
 - AzureAI
 - Gemini
+- deepseek
 
 ## Configuration
-To configure KeyRephrase, you need to update the `credentials.yml` file with your API key and other necessary details. Below is an example of the `credentials.yml` file:
-
-```yaml
-# Configuration for AI provider credentials
-credential:
-  provider: 'gemini'  # Supported providers: openai, openrouter, groq, cerebras, azureai, gemini
-  api_key: 'xxxxx' # Your API key here
-  model_name: 'gemini-1.5-pro' # Model name to use (e.g., gemini-1.5-pro, gpt-4)
-  api_endpoint: '' # Custom API endpoint if required e.g: https://api.xxx.ai/v1
-  api_version: '' # API version if required (mainly for Azure)
-```
+To set up KeyRephrase, update the credentials in the "Manage Credentials" section.
 
 ## Obtaining API Keys
 You can obtain API keys from the following providers:
@@ -37,7 +27,10 @@ You can obtain API keys from the following providers:
 | AzureAI   | https://azure.microsoft.com/en-us/services/cognitive-services/openai-service/          |
 | Groq      | https://console.groq.com/keys : Free                                                  |
 | Gemini    | https://ai.google.dev/gemini-api/docs/api-key : Free                                   |
-| Cerebras  | https://cloud.cerebras.ai/ : Free                                                      |
+| Cerebras  | https://cloud.cerebras.ai/ : Free   
+
+## Download
+<a href="https://github.com/vk-maurya/KeyRephrase/releases/download/1.0.1/keyrephrase.exe" target="_blank">Download KeyRephrase</a>                                                |
 
 ## Usage
 1. Select the text you want to rephrase.
@@ -46,4 +39,3 @@ You can obtain API keys from the following providers:
 
 ## Support
 For any issues or support, please refer to the documentation provided by your LLM provider or raise issue in current repo.
-
